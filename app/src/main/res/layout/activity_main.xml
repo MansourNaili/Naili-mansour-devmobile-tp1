@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/textViewTitre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/titre_compteur"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <!-- Valeur du compteur (grande taille de texte) -->
+    <TextView
+        android:id="@+id/textViewCompteur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="@string/valeur_initiale"
+        android:textColor="@color/compteur_nul"
+        android:textSize="72sp"
+        android:textStyle="bold" />
+
+    <!-- Ligne des boutons + et - (chacun prend la moitié de la largeur) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonIncrementer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:text="@string/bouton_incrementer"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/buttonDecrementer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:text="@string/bouton_decrementer"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <!-- Bouton Réinitialiser -->
+    <Button
+        android:id="@+id/buttonReinitialiser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bouton_reinitialiser"
+        android:textSize="18sp" />
+
+</LinearLayout>

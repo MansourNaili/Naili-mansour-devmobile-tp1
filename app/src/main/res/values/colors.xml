@@ -1,0 +1,8 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!--  [OPTIONNEL] Couleurs de la valeur du compteur  -->
+    <color name="compteur_positif">#FF2E7D32</color>
+    <color name="compteur_negatif">#FFC62828</color>
+    <color name="compteur_nul">#FF000000</color>
+</resources>
